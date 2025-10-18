@@ -1,0 +1,133 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 15px 25px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.nav-left .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center .nav-btn {
+  padding: 8px 16px;
+  background-color:white;
+  color: #003366;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-center .nav-btn:hover {
+  background-color: #c1c1be;
+}
+
+.nav-right input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 250px;
+  max-width: 100%;
+}
+
+/* News Card Container */
+.news-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* News Card */
+.news-card {
+  background-color: white;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-content h2 {
+  color: #003366;
+  margin-bottom: 12px;
+}
+
+.news-content p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.news-content a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.news-content a:hover {
+  color: #ff9900;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .nav-center {
+    justify-content: center;
+  }
+
+  .nav-right input {
+    width: 100%;
+  }
+}
