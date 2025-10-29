@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>News-app</title>
+     <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-
   <nav class="navbar">
     <div class="nav-left">
-      <div class="logo">🗞️ National News</div>
+      <div class="logo">
+        📰 <span>National News</span>
+      </div>
     </div>
+
     <div class="nav-center">
-      <button class="nav-btn">Subscribe</button>
+      <button class="center-btn">Latest News</button>
     </div>
+
     <div class="nav-right">
-      <input type="text" placeholder="Search latest news..." />
+      <input type="text" class="search-bar" placeholder="Search news...">
     </div>
   </nav>
 
-
-
-    <div class="news-container">
+    <div class="container">
     <div class="news-card">
-      <img src="https://source.unsplash.com/600x300/?news,breaking" alt="News Image" />
-      <div class="news-content">
-        <h2>Major Update in Global News</h2>
-        <p>
-          Global leaders meet to discuss new policies on climate change and international trade.
-          Stay tuned for detailed coverage and analysis from our experts.
-        </p>
-        <a href="#">Read Full Story →</a>
+      <img src="https://via.placeholder.com/400x200" alt="News Image">
+      <div class="news-card-content">
+        <h3>Breaking News: Exciting Event!</h3>
+        <p>Stay updated with the latest amazing news happening today. Exciting moments you can't miss even for a second. All details inside this article.</p>
+        <a href="#" target="_blank">
+          <i class="fas fa-newspaper"></i> Read More
+        </a>
       </div>
     </div>
   </div>
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
  <script src="app.js"></script>   
 </body>
 </html>
